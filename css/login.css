@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+.logo {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.credentials {
+  background-color: brown;
+  width: 50%;
+  height: 100vh;
+}
+
+#consultorio {
+  width: 100%;
+  height: auto;
+  /* La imagen se llena completamente y trata de proporcionarse a lo alto con el auto */
+  /* Haz que la imagen llene su contenedor pero sin deformarse */
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+    /* Oculta el logo en móviles */
+  }
+
+  .credentials {
+    width: 100%;
+    /* Hace que el formulario ocupe toda la pantalla */
+  }
+}
