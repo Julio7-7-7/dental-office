@@ -20,7 +20,7 @@ main {
 }
 
 .credentials {
-  background-color: brown;
+  background-color: rgb(219, 214, 214);
   width: 50%;
   height: 100vh;
 }
