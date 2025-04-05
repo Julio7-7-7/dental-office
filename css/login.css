@@ -1,5 +1,6 @@
 html,
 body {
+  /* Hace que no haya scroll ya que es un login waos */
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -10,19 +11,31 @@ main {
   height: 100vh;
 }
 
-.logo {
-  width: 50%;
-  height: 100vh;
+#logo-esq {
+  width: 27%;
+  height: auto;
+  margin: 25px auto auto 30px;
+}
+
+#wlcm {
+  margin: 40px auto 40px auto;
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .credentials {
   background-color: rgb(219, 214, 214);
   width: 50%;
   height: 100vh;
+}
+
+.data>form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
 }
 
 #consultorio {
@@ -33,6 +46,14 @@ main {
   object-fit: cover;
 }
 
+.logo {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
   .logo {
